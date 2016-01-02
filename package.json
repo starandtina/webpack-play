@@ -1,0 +1,23 @@
+{
+  "name": "Babel",
+  "version": "1.0.0",
+  "description": "Play with webpack.",
+  "main": "bar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:starandtina/webpack-play.git"
+  },
+  "keywords": [],
+  "author": "Khalil Zhang <kandmforever@126.com> (http://starandtina.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "6.3.26",
+    "babel-loader": "6.2.0",
+    "babel-plugin-add-module-exports": "0.1.2",
+    "babel-preset-es2015": "6.3.13",
+    "webpack": "1.12.9"
+  }
+}
