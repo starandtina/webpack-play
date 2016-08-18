@@ -1,16 +1,22 @@
+var path = require('path');
+var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
+
 module.exports = {
-  entry: './entry.js',
+  entry: {
+    vendor: ['./vendor1', './vendor2'],
+    pageA: './pageA',
+    pageB: './pageB',
+    pageC: './pageC'
+  },
   output: {
     path: __dirname + '/build',
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
-  module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel'
-    }
+  plugins: [
+    new CommonsChunkPlugin({
+      // The order of this array matters
+      names: ['common', 'vendor'],
+      minChunks: 2
+    })
   ]
-  }
-};
+}
