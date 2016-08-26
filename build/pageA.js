@@ -15,5 +15,12 @@ webpackJsonp([0],[
 	module.exports = "utility1";
 
 
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	module.exports = "utility2";
+
+
 /***/ }
 ]);

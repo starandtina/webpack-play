@@ -15,8 +15,8 @@ module.exports = {
   plugins: [
     new CommonsChunkPlugin({
       // The order of this array matters
-      names: ['common', 'vendor'],
-      minChunks: 2
+      name: 'vendor',
+      minChunks: Infinity // Passing `Infinity` just creates the commons chunk, it means `vendor` only includes `vendor1` and `vendor2`
     })
   ]
 }
