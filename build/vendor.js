@@ -116,7 +116,7 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = "vendors";
+	module.exports = "vendor2";
 
 
 /***/ }

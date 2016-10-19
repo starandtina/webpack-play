@@ -16,7 +16,9 @@ module.exports = {
     new CommonsChunkPlugin({
       // The order of this array matters
       name: 'vendor',
-      minChunks: Infinity // Passing `Infinity` just creates the commons chunk, it means `vendor` only includes `vendor1` and `vendor2`
+      // Passing `Infinity` just creates the commons chunk, it means `vendor` only includes `vendor1` and `vendor2`
+      // If we comment out this line, the `utility2` will bundled into vendor because it's consumed by `pageA`, `pageB` and `pageC`
+      minChunks: Infinity
     })
   ]
 }
