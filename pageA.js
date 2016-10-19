@@ -1,4 +1,6 @@
-var utility1 = require('./utility1');
-var utility2 = require('./utility2');
+require.ensure([], function () {
+  var utility1 = require('./utility1')
+  var utility2 = require('./utility2')
+}, 'pageA')
 
-module.exports = "pageA";
+module.exports = 'pageA'
