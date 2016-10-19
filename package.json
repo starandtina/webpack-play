@@ -4,6 +4,7 @@
   "description": "Play with webpack.",
   "main": "bar.js",
   "scripts": {
+    "build": "rm -rf build && webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
