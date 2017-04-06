@@ -76,7 +76,7 @@
 /******/ 			script.charset = 'utf-8';
 /******/ 			script.async = true;
 
-/******/ 			script.src = __webpack_require__.p + "" + chunkId + "." + ({"0":"pageA","1":"pageB","2":"pageC","4":"common"}[chunkId]||chunkId) + ".js";
+/******/ 			script.src = __webpack_require__.p + "" + chunkId + "." + ({"0":"pageA","1":"pageB","2":"pageC"}[chunkId]||chunkId) + ".js";
 /******/ 			head.appendChild(script);
 /******/ 		}
 /******/ 	};
@@ -116,7 +116,7 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = "vendors";
+	module.exports = "vendor2";
 
 
 /***/ }

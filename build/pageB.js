@@ -8,5 +8,20 @@ webpackJsonp([1],[
 	module.exports = "pageB";
 
 
+/***/ },
+/* 1 */,
+/* 2 */
+/***/ function(module, exports) {
+
+	module.exports = "utility2";
+
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	module.exports = "utility3";
+
+
 /***/ }
 ]);
